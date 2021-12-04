@@ -1,0 +1,342 @@
+extends ./share/container.pug
+block config
+    - var title = '首页';
+    - var keywords = '首页';
+    - var description = '首页';
+block css
+block append main
+    #header.clearfix
+        div.fl
+            img.logo(src=imgUrl+"logo.png", alt="")
+            .line 
+            img.slogan(src=imgUrl+"slogan.png", alt="")
+        div.navRight
+            | 400-680-9983
+            img.icon1(src=imgUrl+"icon1.png", alt="")
+    #banner.clearfix
+        .navbg
+            ul#nav
+                li.nol
+                    a(href="#videoArea") 项目介绍
+                
+                li 
+                    a(href="#features") 功能介绍
+                li 
+                    a(href="#advantage") 项目优势
+                li 
+                    a(href="#cooperate") 关于合作
+                li.nor
+                    a(href="#aboutus") 了解我们
+        .textBox.bounceInDown.animated
+            h1 卡路链智能无人餐厅
+            p 一台设备，一个人，一家店#[span 开启你的财富之路！]
+            p.tips 24小时多餐段经营，真正的低成本坪效高转换！
+        .swiper-container
+            .swiper-wrapper
+                .swiper-slide
+                    img(src=imgUrl+"banner1.jpg")
+                .swiper-slide
+                    img(src=imgUrl+"banner2.jpg")
+                .swiper-slide
+                    img(src=imgUrl+"banner3.jpg")
+            .swiper-pagination
+    #videoArea
+        .textArea
+            h1 全新模式的智能无人餐厅
+            p 卡路链智能无人餐厅致力于打造24小时分时段经营的智能餐咖它是集众多不同类别美食于一体的智能美食休闲驿站，一站式不用挪窝，从早到晚多个经营时段提供不同的餐品、小食、饮品等等。一个餐厅就可以让消费者品尝到我们甄选的天南海北的美食，同时高端个性工业风的装修风格在任何时候都能给人一种高端、沉稳、舒适的就餐感受。卡路链传达的是一种生活方式，这里即有美食也有舒适用餐环境、无论是工作用餐、商务洽谈用餐、三两好友用餐、家庭用餐等都可以来到卡路链职能餐厅！
+        .videos.clearfix
+            .videoBox
+                .videobg
+                    video(src=videoUrl+"video1.mp4",controls=true,poster=imgUrl+"poster1.jpg") 
+                p 无人餐厅的问世，替代了哪些岗位？
+            .videoBox
+                .videobg
+                    video(src=videoUrl+"video2.mp4",controls=true,poster=imgUrl+"poster2.jpg") 
+                p 经营一家智能无人餐厅能赚钱吗？
+            .videoBox
+                .videobg
+                    video(src=videoUrl+"video3.mp4",controls=true,poster=imgUrl+"poster3.jpg") 
+                p 首家智能无人餐厅问世杭州！
+            .videoBox
+                .videobg
+                    video(src=videoUrl+"video4.mp4",controls=true,poster=imgUrl+"poster4.jpg") 
+                p 体验一下智能无人餐厅用餐流程
+            .videoBox
+                .videobg
+                    video(src=videoUrl+"video5.mp4",controls=true,poster=imgUrl+"poster5.jpg") 
+                p 无人餐厅如何实现无人的场景应用
+            .videoBox
+                .videobg
+                    video(src=videoUrl+"video6.mp4",controls=true,poster=imgUrl+"poster6.jpg") 
+                p 卡路链智能无人餐厅的优势所在
+    #goodArea
+        .textArea
+            h1 卡路链智能无人餐桌功能一览
+            p 智能回转餐台，该设备集菜品自动回转传送、餐门自动控制、餐位面板自动清洗消杀、餐具自动回收清洗于一体整套设备全自主研发，所有组件都已开模，随时根据市场发展需要进行大批量生产。无论在工艺、品质上的把控还是生产成本控制，都在企业的可控范围内，极大的提升企业生产经营的竞争力。
+        #goods.goods 
+            img.good(src=imgUrl+"good.png", alt="")
+            img.good1(src=imgUrl+"good1.png", alt="")
+            img.good2(src=imgUrl+"good2.png", alt="")
+            img.good3(src=imgUrl+"good3.png", alt="")
+            img.good4(src=imgUrl+"good4.png", alt="")
+            img.good5(src=imgUrl+"good5.png", alt="")
+            img.good6(src=imgUrl+"good6.png", alt="")
+    #features.clearfix
+        .textArea
+            h1 强大的智能系统功能模块
+            p 该软件服务平台融合了卡路链全套经营模式，用软件平台将整套商业模式中涉及到的人、菜、设备、店 融会贯通，形成一套全方位的管理平台。该套软件系统平台 集总管理平台、供应商管理、门店经营管理、冷链仓储管理、财务结算管理为一体，将整个项目运营变的系统化、数据化、可视化
+        .features
+            .featuresBox
+                h2 刷脸点餐
+                p 刷脸后随时随地点餐下单
+                img.icon(src=imgUrl+"icon2.png", alt="")
+            .featuresBox
+                h2 微信小程序点餐
+                p 顾客扫码即可通过微信小程序开启餐门消费
+                img.icon(src=imgUrl+"icon3.png", alt="")
+            .featuresBox
+                h2 公众号商城
+                p 卡路链供应商以及经纪人通过商城实现供货和采购
+                img.icon(src=imgUrl+"icon4.png", alt="")
+            .featuresBox
+                h2 公众号客户中心
+                p 满足消费者管理，沟通客服，查看个人信息
+                img.icon(src=imgUrl+"icon5.png", alt="")
+            .featuresBox
+                h2 物料产品管理
+                p 所有物料基础信息数据化建设后维护操作
+                img.icon(src=imgUrl+"icon6.png", alt="")
+            .featuresBox 
+                h2 进销存管理
+                p 仓库内产品的进货、销售、库存数据化管理
+                img.icon(src=imgUrl+"icon7.png", alt="")
+            .featuresBox
+                h2 菜品管理 
+                p 所有菜品基础信息数据化建立后维护操作
+                img.icon(src=imgUrl+"icon8.png", alt="")
+            .featuresBox
+                h2 餐桌维护管理
+                p 餐桌餐位的基础信息数据化建立后维护操作
+                img.icon(src=imgUrl+"icon9.png", alt="")
+            .featuresBox
+                h2 数据大屏管理
+                p 数据大屏实时动态显示店内经营情况与数据
+                img.icon(src=imgUrl+"icon10.png", alt="")
+            .featuresBox
+                h2 营销活动管理
+                p 各种营销功能通过管理后台进行建立维护
+                img.icon(src=imgUrl+"icon11.png", alt="")
+            .featuresBox
+                h2 会员体系管理
+                p 发展会员,分析消费数据建立数据化管理
+                img.icon(src=imgUrl+"icon12.png", alt="")
+            .featuresBox
+                h2 数据报表管理
+                p 生成、审核报表数据,舍位平衡操作
+                img.icon(src=imgUrl+"icon13.png", alt="")
+            .featuresBox
+                h2 优惠券派发功能
+                p 通过优惠券发放,营销新老客户
+                img.icon(src=imgUrl+"icon14.png", alt="")
+            .featuresBox
+                h2 团购拓客功能
+                p 争取新客户，稳定老客户拓宽客户量
+                img.icon(src=imgUrl+"icon15.png", alt="")
+            .featuresBox
+                h2 会员储折功能
+                p 回笼资金,提高会员忠诚度分析储值报表
+                img.icon(src=imgUrl+"icon16.png", alt="")
+            .featuresBox
+                h2 好友推荐分享
+                p 分享热点,讯息，私域流量裂变通过客户创造客户
+                img.icon(src=imgUrl+"icon17.png", alt="")
+    #advantage
+        .textArea
+            h1 卡路链智能无人餐厅优势
+            p OUR ADVANTAG  EFUTURE NEEDS
+        .tablebg
+            table
+                tr
+                    th.black 对比项
+                    th.title 
+                        h3.fl 传统餐厅
+                        h3.fr 智能餐厅
+                tr 
+                    td.col1 
+                        img(src=imgUrl+"icon18.png", alt="")
+                        span 点餐
+                    td.col2 
+                        p.left 需要服务员逐个给客人点餐，效率低，人员成本高
+                        img.left(src=imgUrl+"table1.png", alt="")
+                        img.right(src=imgUrl+"table2.png", alt="")
+                        p.right 刷脸点餐全智能自助操作，效率高省去服务人工成本
+                tr 
+                    td.col1 
+                        img(src=imgUrl+"icon19.png", alt="")
+                        span 送餐
+                    td.col2 
+                        p.left 所有餐品需跑菜人员送餐上桌，效率低，人员成本高
+                        img.left(src=imgUrl+"table3.png", alt="")
+                        img.right(src=imgUrl+"table4.png", alt="")
+                        p.right 智能菜品输送带上传送，省去送餐环节降低成本，提高效率
+                tr 
+                    td.col1
+                        img(src=imgUrl+"icon20.png", alt="")
+                        span 收银
+                    td.col2 
+                        p.left 客人用餐完成，需要专门的收银人员收银结账
+                        img.left(src=imgUrl+"table5.png", alt="")
+                        img.right(src=imgUrl+"table6.png", alt="")
+                        p.right 客人智能餐台上用餐完成后，刷脸即可完成结账，省去收银
+                tr 
+                    td.col1
+                        img(src=imgUrl+"icon21.png", alt="")
+                        span 收银
+                    td.col2 
+                        p.left 客人用餐完成后，需服务人员收桌清台效率低，人员成本高
+                        img.left(src=imgUrl+"table7.png", alt="")
+                        img.right(src=imgUrl+"table8.png", alt="")
+                        p.right 客人用餐结束后智能餐桌台面自动回收餐具，清洗餐面
+    #scenes
+        .textArea
+            h1 卡路链应用场景
+            p 智能无人餐桌可以广泛的应用在任何有人流的地方，一个店、一张餐桌、一个人就可以开店经营，并且可以实现24小时分餐段经营，降低人工成本，提升门店坪效！
+            .triangleBox
+                .row1 
+                    img.mr(src=imgUrl+"scenes1.png", alt="")
+                    img(src=imgUrl+"scenes2.png", alt="")
+                .row2
+                    img(src=imgUrl+"scenes3.png", alt="")
+                    img.md(src=imgUrl+"scenes4.png", alt="")
+                    img(src=imgUrl+"scenes5.png", alt="")
+                .row3
+                    img(src=imgUrl+"scenes6.png", alt="")
+    #cooperate.clearfix
+        .textArea
+            h1 加盟合作模式
+            p 智能无人餐厅，科技蓝海项目，就等你的加入！
+        .boxs.clearfix
+            .fl
+                table.box
+                    tr
+                        td 
+                            img(src=imgUrl+"icon22.png", alt="")
+                        td.text 
+                            h3 省市合伙人
+                            p 以一个省/市为单位，以双方持股的方式
+                table.box 
+                    tr 
+                        td 
+                            img(src=imgUrl+"icon24.png", alt="")
+                        td.text 
+                            h3 门店合伙人
+                            p 以一个店为合作单位，由卡路链开设门店经营人以入股经营或以销售成经营的方式参与经营
+            .fr
+                table.box 
+                    tr 
+                        td 
+                            img(src=imgUrl+"icon23.png", alt="")
+                        td.text 
+                            h3 品牌加盟合作
+                            p 加盟商加盟卡路链品牌后卡路链提供硬软件相关的全套技术支撑服务，可双方持股经营或加盟者独立经营
+                table.box 
+                    tr 
+                        td 
+                            img(src=imgUrl+"icon25.png", alt="")
+                        td.text 
+                            h3 设备购买合作
+                            p 创业者购买卡路链设备卡路链提供硬软件相关的全套技术支撑服务创业者独立自主经营深度战略合作经营
+    #bottomBox.clearfix
+        #support
+            .textArea
+                h1 加盟支持
+                p KALULIAN   RESTAURANT
+            .olBox 
+                ol.l 
+                    li 1、门店选址指导 
+                    li.left 2、门店软装支持 
+                    li 3、门店经营餐台全套设备支持  
+                    li.left 4、门店智能餐具全套提供支持 
+                    li 5、门店整套营业软件系统支持 
+                    li.left 6、厨房操作设备供应支持  
+                ol.r 
+                    li 7、合伙人经营培训 
+                    li.right 8、 开业驻点支持 
+                    li 9、产品供应链支持  
+                    li.right 10、产品物流配送支持 
+                    li 11、 门店营销宣传支持 
+                    li.right 12、金融借贷支持 
+        #aboutus
+            .left
+                h2 关于我们
+                p 现成立的浙江卡路链科技有限公司，集硬件设备研发、软件系统开发为一体的高科技智能型企业。企业母公司是一家专业从事全自动电脑控制设备系统研发、生产、销售、服务于一体的高新技术企业，是中国无接触洗车理念的倡导者和实践者。
+                p 母公司在智能设备物联网行业深耕10余载，吸纳世界同行业先进技术基础上，采用独特的设计理念，历经多年的不断研究、测试、检验，经过进一步创新，研发出多款适合我国国情、性价比高、性能可靠稳定智能洗车设备。公司自成立以来一直非常重视技术创新，进行了多个相关技术的研究开发项目；并拥有60项国内授权的有效专利，使公司在行业中的技术含量处于国内领先水平。
+                p 公司基于母公司奠定的丰富的智能设备的研发生产经验，于2017年开始着手研发智能回转餐台设备与智能控制系统，该设备集菜品自动回转传送、餐门自动控制、餐位面板自动清洗消杀、餐具自动回收清洗于一体，最大限度的替代人工，优化人力。该套设备集成了人脸识别、热感应、RFID等多种物联网应用介质设备，有效的解决了应用场景中的交互难点。同时搭载自主开发的智能软件系统，有效打通连接各个环节，形成闭环。以回转餐台为核心的无人智能餐厅应运而生。
+                p 公司致力于用先进高品质的硬件设备、多元化的平台体系、超前的经营模式，让人们能花钱少，吃的好！让餐饮经营者用更低的门槛和经营成本获取更大的经营利润。
+                span#more 了解更多 >
+            img.right(src=imgUrl+"pic.jpg", alt="")
+    #footer.clearfix
+        a.gotop(href="#")
+            img(src=imgUrl+"gotop.png", alt="")
+        .fbox.clearfix
+            div.col1 
+                img.erweima(src=imgUrl+"erweima.jpg", alt="")
+                img.logo(src=imgUrl+"logo2.png", alt="")
+            div.col2 
+                .icons 
+                    img(src=imgUrl+"icon26.png", alt="")
+                    img.center(src=imgUrl+"icon27.png", alt="")
+                    img(src=imgUrl+"icon28.png", alt="")
+                p.title 400-680-9983
+                p.border 电话咨询
+                p.address
+                    |公司地址：
+                    br
+                    |杭州市萧山经济技术开发区鸿兴路109号(杭州萧山跨境贸易电子商务园)
+                p 
+                    |联系邮箱：
+                    br
+                    |118981@QQ.COM
+            dl 
+                dt 快捷导航
+                dd
+                    a(href="#features") 功能介绍
+                dd 
+                    a(href="#videoArea") 项目介绍
+                dd 
+                    a(href="#advantage") 项目优势
+                dd 
+                    a(href="#cooperate") 关于合作
+                dd 
+                    a(href="#aboutus") 了解我们 
+        .tips 
+            img(src=imgUrl+"beian.png", alt="")
+            span 浙公网安备
+            span 浙ICP备 11046813号-1
+    #mask 
+        .content 
+            .left 
+                h3 留言信息
+                form(action="#") 
+                    .row 
+                        input.mr(type="text",placeholder="姓名")
+                        input(type="text",placeholder="手机号")
+                    input(type="text",placeholder="邮箱")
+                    textarea(name="content", cols="30", rows="10",placeholder="信息内容")
+                    input.submit(type="submit" value="提交信息")
+                    button.close 关闭
+            .right
+                h3 联系我们
+                div.icon29 
+                    |地址:
+                    br
+                    |杭州市萧山经济技术开发区鸿兴路109号(杭州萧山跨境贸易电子商务园)
+                div.icon30 
+                    |电话:
+                    br
+                    |400-680-9983
+                div.icon31
+                    |邮箱:
+                    br
+                    |118981@QQ.COM
+block append js

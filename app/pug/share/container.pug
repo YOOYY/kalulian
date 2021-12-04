@@ -1,0 +1,8 @@
+extends ./head.pug
+block append body
+    body
+        block main
+        script(src=jsUrl+"jquery.js")
+        script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
+        script(src=jsUrl+"index.js")
+        block js
